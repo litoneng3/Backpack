@@ -1,0 +1,28 @@
+.card-image{
+    background-color:#eeebeb;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 15px;
+    padding: 15px;
+    margin: 20px;
+    
+}
+.card-last{
+    border: none;
+    background-color: white;
+}
+.card-border{
+    border:none;
+    
+}
+.rounded{
+    border-radius: 3rem !important;
+}
+.buy-button{
+    background-color: navy;
+   
+}
+.price{
+    font-weight: 700;
+    color:olivedrab;
+    font-size: 40px;
+}
