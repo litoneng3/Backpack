@@ -1,3 +1,4 @@
+
 .card-image{
     background-color:#eeebeb;
     border: 1px solid rgb(255, 255, 255);
@@ -25,4 +26,22 @@
     font-weight: 700;
     color:olivedrab;
     font-size: 40px;
+}
+#contact{
+    height: 350px;
+}
+
+
+.orange-bg{
+    background-color: #fceae8;
+    border-radius: 10px;
+}
+
+
+@media (max-width:668px){
+    .about-1,.about-2,.about-3{
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
 }

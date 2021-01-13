@@ -11,29 +11,21 @@
 <body>
     
     <!-- Header section starts -->
-    <header class="container">
+    <header class="container bg-light">
         <!-- navbar section starts -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">Navbar</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <a class="navbar-brand" href="#"><img class="w-50" src="images/Logo.png" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse d-flex justify-content-end navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#product">Product</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#about">About Us</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#contact" tabindex="-1" >Contact</a>
-                  </li>
-                </ul>
+              <div class="collapse justify-content-end navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  <a class="nav-link" href="#about">About</a>
+                  <a class="nav-link" href="#product">Product</a>
+                  <a class="nav-link " href="#contact" tabindex="-1" aria-disabled="true">Contact Us</a>
+                </div>
               </div>
             </div>
           </nav>
@@ -41,11 +33,11 @@
 
 
           <!-- Banner section starts -->
-          <section class="banner mt-5">
+          <section class="banner mt-5 p-5">
               <div class="row g-5 d-flex justify-content-center align-items-center">
                   <div class="col-md-6">
-                    <h1>Backpack </h1>
-                    <h1>Moon</h1>
+                    <h1 style="font-size: 40px;font-weight: 700;">Backpack </h1>
+                    <h1 style="color: #9e3abd;font-size: 40px;font-weight: 700;">MOON</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quos recusandae ipsum!</p>
                     <button class="btn btn-primary buy-button"><i class="fas fa-shopping-cart"></i> Buy Now</button>
                   </div>
@@ -61,27 +53,27 @@
     <!-- Main section starts -->
     <main class="container">
 
-        <!-- Contact section starts -->
-        <section class="contact mt-5">
+        <!-- About section starts -->
+        <section id="about" class="about mt-5">
             <div class="row">
                 <div class="col-md-6 col-sm-12">
-                    <div class="contact-1 d-flex justify-content-center align-items-center">
+                    <div class="about-1 d-flex justify-content-center align-items-center">
                         <img class="w-25 me-2" src="images/Icon/icon-1.png" alt="">
-                        <div class="contact-info">
+                        <div class="about-info">
                             <h2>Find your perfect Fit</h2>
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam, repudiandae hic. Nemo?</p>
                         </div>
                     </div>
-                    <div class="contact-2 d-flex justify-content-center align-items-center">
+                    <div class="about-2 d-flex justify-content-center align-items-center">
                         <img class="w-25 me-2" src="images/Icon/icon-2.png" alt="">
-                        <div class="contact-info">
+                        <div class="about-info">
                             <h2>Find your perfect Fit</h2>
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam, repudiandae hic. Nemo?</p>
                         </div>
                     </div>
-                    <div class="contact-3 d-flex justify-content-center align-items-center">
+                    <div class="about-3 d-flex justify-content-center align-items-center">
                         <img class="w-25 me-2" src="images/Icon/icon-3.png" alt="">
-                        <div class="contact-info">
+                        <div class="about-info">
                             <h2>Find your perfect Fit</h2>
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam, repudiandae hic. Nemo?</p>
                         </div>
@@ -92,13 +84,13 @@
                 </div>
             </div>
         </section>
-        <!-- Contact section ends -->
+        <!-- About section ends -->
 
         <!-- Casual section starts -->
-        <section class="casual-backpack mt-5">
+        <section id="product" class="casual-backpack mt-5">
             <h1 class="section-title">Casual Backpack</h1>
             <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col col-sm-6">
+                <div class="col">
                   <div class="card shadow card-border rounded h-100">
                     <img class="card-image" src="images/casual-backpack/casual-bag-1.png" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -111,7 +103,7 @@
                       </div>
                   </div>
                 </div>
-                <div class="col col-sm-6">
+                <div class="col">
                   <div class="card shadow rounded card-border h-100">
                     <img class="card-image" src="images/casual-backpack/casual-bag-2.png" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -124,7 +116,7 @@
                       </div>
                   </div>
                 </div>
-                <div class="col col-sm-6">
+                <div class="col">
                   <div class="card shadow rounded card-border h-100">
                     <img class="card-image" src="images/casual-backpack/casual-bag-3.png" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -189,14 +181,28 @@
         </section>
         
         <!-- Travel section ends -->
-
-        <!-- adding section -->
-        <section class="mt-5">
-
+         <!-- Contact Us section starts -->
+         <section id="contact" class="mt-5">
+            <div class="container d-flex align-items-center justify-content-center orange-bg" id="contact">
+                <div>
+                  <h1>Contact Us</h1>
+                  <h6>Feel free to contact with us.</h6>
+                  <input class="form-control" type="text" placeholder="Enter your name">
+                  <input class="form-control" type="email" placeholder="Enter your email">
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder=" Please Write your opinion"></textarea>
+                  <button class="btn btn-primary buy-button mt-2">SUBMIT</button>
+                </div>
+              </div>
         </section>
+        <!-- Contact Us section ends -->
+        
     </main>
     <!-- Main section ends -->
-    
+    <!-- Footer section starts -->
+    <footer class="container mt-5 d-flex justify-content-center align-items-center">
+       <small>©2020. Panda Commerce. All rights reserved. Sofia, Bulgaria. </small>
+    </footer>
+    <!-- Footer section ends -->
 
 
 
