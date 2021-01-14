@@ -1,4 +1,6 @@
-
+.menu li{
+    margin-right: 20px;
+}
 .card-image{
     background-color:#eeebeb;
     border: 1px solid rgb(255, 255, 255);
@@ -15,9 +17,7 @@
     border:none;
     
 }
-.rounded{
-    border-radius: 3rem !important;
-}
+
 .buy-button{
     background-color: navy;
    
@@ -37,7 +37,13 @@
     border-radius: 10px;
 }
 
-
+@media (max-width:992px){
+    .about .row{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        place-items: center;
+    }
+}
 @media (max-width:668px){
     .about-1,.about-2,.about-3{
         flex-wrap: wrap;
